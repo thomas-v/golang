@@ -29,8 +29,9 @@ var varBool, varBoolBis bool
 var name, nameBis string = "Neo", "Morpheus"
 var movie = "Matrix"
 
-func main() {
+const Truth int = 42
 
+func main() {
 	var varIntBis int
 	fmt.Printf("Le résultat de la variable 'varInt' est : %d\n", varInt)
 	fmt.Printf("Le résultat de la variable 'varString est : %v'\n", varString)
@@ -52,4 +53,14 @@ func main() {
 	fmt.Printf("Le résultat de la variable 'diplomaName' est : %v et son type est : %T\n", diplomaName, diplomaName)
 	fmt.Printf("Le résultat de la variable 'diplomaType' est : %v et son type est : %T\n", diplomaType, diplomaType)
 	fmt.Printf("Le résultat de la variable 'diplomaNote' est : %v et son type est : %T\n", diplomaNote, diplomaNote)
+
+	varInt = 42
+	var varCastToFloat float64 = float64(varInt)
+	fmt.Printf("Le type de la variable 'varInt' est : %T\n", varInt)
+	fmt.Printf("Le type de la variable 'varCastToFloat' est : %T\n", varCastToFloat)
+
+	fmt.Printf("'La réponse de la question ultime sur le sens de la vie' : %d\n", Truth)
+	
+	number1 := 1<<50
+	fmt.Printf("%d %T\n", number1, number1)
 }
