@@ -8,6 +8,9 @@ func main(){
 	fmt.Println(add(5,5))
 	fmt.Println(getNames())
 	fmt.Println(split(17))
+
+	defer fmt.Println("World !")
+	fmt.Println("Hello")
 }
 
 func add(x, y int) int{
