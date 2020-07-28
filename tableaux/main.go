@@ -37,4 +37,9 @@ func main(){
 		{3, "c"},
 	}
 	fmt.Println(d)
+
+	e := d[:2]
+	fmt.Println(e)
+	f := d[2:]
+	fmt.Println(f)
 }
